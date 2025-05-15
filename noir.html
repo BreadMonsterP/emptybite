@@ -1,119 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Join Lost Realm Noir 2.0</title>
-  
-  <!-- Embed Preview (Open Graph Tags) -->
-  <meta property="og:title" content="Join Lost Realm Noir 2.0 on Discord!">
-  <meta property="og:description" content="A stylish community for vibing and chaos. Tap to join the realm.">
-  <meta property="og:image" content="https://i.imgur.com/JOvBsgD.gif">
-  <meta property="og:url" content="https://discord.com/invite/ks2AYkYeBc">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <style>
-    :root {
-      --background: #1e1e2f;
-      --text-primary: #ffffff;
-      --text-secondary: #cccccc;
-      --discord-blurple: #5865F2;
-      --discord-blurple-hover: #4752c4;
-      --border-radius: 12px;
-    }
-
-    body {
-      background-color: var(--background);
-      color: var(--text-primary);
-      font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      text-align: center;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      margin: 0;
-      line-height: 1.6;
-    }
-
-    .server-icon {
-      border-radius: 50%;
-      margin-bottom: 1.5rem;
-      width: 128px;
-      height: 128px;
-      object-fit: cover;
-      border: 3px solid var(--discord-blurple);
-      box-shadow: 0 4px 20px rgba(88, 101, 242, 0.3);
-      transition: transform 0.3s ease;
-    }
-
-    .server-icon:hover {
-      transform: scale(1.05);
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.75rem;
-      background: linear-gradient(90deg, #ffffff, #a5a5a5);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
-    .description {
-      color: var(--text-secondary);
-      font-size: 1.1rem;
-      margin-bottom: 1.5rem;
-      max-width: 80%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .join-button {
-      display: inline-block;
-      padding: 0.75rem 1.75rem;
-      background-color: var(--discord-blurple);
-      color: white;
-      border-radius: var(--border-radius);
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .join-button:hover {
-      background-color: var(--discord-blurple-hover);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 1.5rem;
-      }
-      
-      h1 {
-        font-size: 1.75rem;
-      }
-      
-      .description {
-        font-size: 1rem;
-        max-width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Lost Realm Noir 2.0</title>
+    
+    <!-- Essential Open Graph/Discord Embed Tags -->
+    <meta property="og:title" content="Lost Realm Noir 2.0">
+    <meta property="og:description" content=" Meow meow meow meow meow meow meow.">
+    <meta property="og:image" content="https://i.imgur.com/JOvBsgD.gif">
+    <meta property="og:url" content="https://discord.com/invite/ks2AYkYeBc">
+    <meta property="og:type" content="website">
+    
+    <!-- Discord-Specific Embed Tags -->
+    <meta name="theme-color" content="#5865F2">
+    <meta property="discord:invite" content="ks2AYkYeBc">
+    <meta property="discord:widget" content="https://discord.com/widget?id=SERVER_ID&theme=dark">
+    
+    <style>
+        body {
+            background-color: #1e1e2f;
+            color: white;
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .discord-embed {
+            background-color: #2f3136;
+            border-radius: 8px;
+            border-left: 4px solid #5865F2;
+            max-width: 500px;
+            width: 100%;
+            padding: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+        
+        .server-icon {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            margin-bottom: 16px;
+        }
+        
+        .server-name {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .server-description {
+            color: #b9bbbe;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+        
+        .join-button {
+            background-color: #5865F2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 16px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .join-button:hover {
+            background-color: #4752c4;
+        }
+        
+        .member-count {
+            color: #b9bbbe;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+    </style>
 </head>
 <body>
-  <img src="https://i.imgur.com/JOvBsgD.gif" 
-       alt="Lost Realm Noir Server Icon" 
-       class="server-icon">
-  <h1>Join Lost Realm Noir 2.0</h1>
-  <p class="description"> Meow meow meow meow meow meow meow. </p>
-  <a href="https://discord.com/invite/ks2AYkYeBc" 
-     target="_blank" 
-     rel="noopener noreferrer" 
-     class="join-button">Join Now</a>
+    <div class="discord-embed">
+        <img src="https://i.imgur.com/JOvBsgD.gif" alt="Server Icon" class="server-icon">
+        <div class="server-name">Lost Realm Noir 2.0</div>
+        <div class="server-description">Meow meow meow meow meow meow meow.</div>
+        <a href="https://discord.com/invite/ks2AYkYeBc" class="join-button" target="_blank">Join Server</a>
+        
+    </div>
 </body>
 </html>
+
